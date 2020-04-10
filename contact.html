@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Victor Nwakwue">
+    <meta name="keywords" content="Victor Nwakwue">
+    <meta name="author" content="Victor Nwakwue">
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Bitter|Alice|Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Ajax Events | Contact</title>
+  </head>
+  <body>
+    <!-- --------------- Header Navbar--------------------- -->
+    <div id="header" class="cont">
+      <div class="overlay"></div>
+      <div class="logo">
+        <a href="index.html">
+          <h1>AJAX <span>EVENT</span></h1>
+        </a>>
+      </div>
+      <nav class="navigation">
+        <ul class="navigation__ul">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT US</a></li>
+          <li><a href="services.html">SERVICES</a></li>
+          <li><a href="gallery.html">GALLERY</a></li>
+          <li><a href="contact.html" class="active-nav">BOOK EVENT</a></li>
+        </ul>
+        <div class="navigation__icon">
+          <span class="topBar"></span>
+          <span class="middleBar"></span>
+          <span class="bottomBar"></span>
+        </div>
+        
+        <div class="navigation_contacts">
+          <span>
+            <i class="fa fa-phone mr-2" aria-hidden="true"></i>
+            09059053779
+          </span>
+          <span>
+            <i class="fas fa-envelope mr-2" aria-hidden="true"></i> info@ajaxevents.com
+          </span>
+        </div>
+      </nav>
+      <div id="page-title">
+        <h1 class=""><span class="head-top">BOOK YOUR EVENT</span></h1>
+        <P>Thank You For Visiting Ajax Events. We look forward to providing you that touch of class in your events. Please contact us via any of the channels below.</P>
+      </div>
+    </div>
+    
+    <!-- CONTACT -->
+    <div class="contact-us">
+      <div class="container">
+        <h4>NOW BOOKING 2020 WEDDINGS & EVENTS</h4>
+        <P>Please fill out the form below if you're interested in working with us for your wedding, engagement session or any Event.</P>
+        <p>For all other inquiries, please our services page or email us at info@ajaxevents.com with details.</p>
+        <!-- <div class="alert "></div> -->
+        <form action="" name="form" method="POST" class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="md-form col-md-4">
+              <label for="fname" class="col-form-label">First Name</label>
+              <input type="text" class="form-control" name="first_name" id="fname" value="" required>
+              <div class="invalid-feedback">
+                First Name is required
+              </div>
+            </div>
+            <div class="md-form col-md-4">
+              <label for="lname" class="col-form-label">Last Name</label>
+              <input type="text" class="form-control" name="last_name" id="lname" value="" required>
+              <div class="invalid-feedback">
+                Last Name is required
+              </div>
+            </div>
+            <div class="md-form col-md-4">
+              <label for="email" class="col-form-label">Your E-mail</label>
+              <input type="email" name="email" class="form-control" id="email" value="" required>
+              <div class="invalid-feedback">
+                A valid email address is required
+              </div>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="md-form col-md-4">
+              <input type="text" name="location" class="form-control" id="venue" value="" placeholder="Location" required>
+              <div class="invalid-feedback">
+                Please Input the Location
+              </div>
+            </div>
+            
+            <div class="md-form col-md-4">
+              <input type="date" id="date" class="form-control datepicker" placeholder="Wedding date" min="" required>
+              <div class="invalid-feedback">
+                date field is required
+              </div>
+            </div>
+            <div class="md-form col-md-4">
+              <select class="custom-select brower-default" required>
+                <option value="">select event category</option>
+                <option value="Wedding">Wedding</option>
+                <option value="Birthday">Birthday</option>
+                <option value="Aniversary">Anniversary</option>
+                <option value="Engagement">Engagement</option>
+                <option value="Funeral">Funeral</option>
+                <option value="Get Together">Get Together</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select event category
+              </div>
+            </div>
+          </div>
+          <div class="form-group mt-4">
+            <label for="message" class="col-form-label">Event deets</label>
+            <textarea name="deets" class="form-control" id="wedding-deets" rows="5" placeholder="Give us a deets!! What colors are decided? What's the style/feel of your day? We can't wait to hear more" required></textarea>
+            <div class="invalid-feedback">
+              Fill In this field
+            </div>
+          </div>
+          <div class="form-group mt-4">
+            <label for="message" class="col-form-label">Message: (optional)</label>
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="Anything else you will like us to know... Please feel free to say your mind"></textarea>
+            <div class="invalid-feedback">
+              Fill In this field
+            </div>
+          </div>
+          <div class="form-group">
+            <div id="feedback">
+              <div class="form-check">
+                <input type="checkbox" value="" class="form-check-input" id="checkbox" required>
+                <label for="checkbox" class="form-check-label">Agree Terms and Conditions</label>
+                <div class="invalid-feedback">
+                  You Must Agree Before Submitting
+                </div>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" value="" class="form-check-input" id="checkbox2" required>
+                <label for="checkbox2" class="form-check-label">Subscribe to our <span class="gold-color">Newsletter</span></label>
+              </div>
+            </div>
+          </div>
+          <input type="submit" class="btn btn-success text-center" value="Submit" name="submit">
+        </form>
+      </div>
+    </div>
+    <!-- ---------------Footer section---------------------- -->
+    <footer class="footer">
+      
+    </footer>
+    <!-- SCRIPTS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"> </script>
+    <script src="js/main.js"></script>
+    <script src="js/general.js"></script>
+    <script src="js/contact.js"></script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+  </body>
+</html>
